@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  chall:
+    build: .
+    image: newstar_pollute2rce_dev:latest
+    ports:
+      - '11230:3000'
+    environment:
+      - ICQ_FLAG=flag{test_flag}
